@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Portfolio Muhamad Gibran Kusniadi - Full Stack Developer">
+    <meta name="keywords" content="portfolio, web developer, frontend, backend, full stack">
+    <meta name="author" content="Muhamad Gibran Kusniadi">
+    <title>Portfolio | Thorat Gaurav Laxman - Data Analyst </title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========================================
+         WELCOME SCREEN
+    ======================================== -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <div class="welcome-icons">
+            <div class="welcome-icon"><i class="fas fa-code"></i></div>
+            <div class="welcome-icon"><i class="fas fa-user"></i></div>
+            <div class="welcome-icon"><i class="fas fa-globe"></i></div>
+        </div>
+        <div class="welcome-text">
+            <h1>Welcome to my</h1>
+            <h2>Portfolio Website</h2>
+            <div class="welcome-url">www.Gavii_Portfolio.com</div>
+        </div>
+        <div class="loading-bar">
+            <div class="loading-progress"></div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         BACKGROUND ANIMATION
+    ======================================== -->
+    <div class="bg-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- ========================================
+         NAVBAR
+    ======================================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Gaurav Thorat</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HOME SECTION
+    ======================================== -->
+    <section id="home">
+        <div class="home-lanyard-wrapper">
+            <div class="lanyard-container">
+                <div class="lanyard-strap"></div>
+                <div class="breakaway-clip"></div>
+                <div class="metal-hook"></div>
+                <div class="id-card-holder">
+                    <div class="card-slot"></div>
+                    <div class="id-card-content">
+                        <div class="id-photo-wrapper">
+                            <img src="gaurav.jpeg" alt="Gaurav Thorat" class="id-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-content">
+            <div class="badge">👋 Welcome to My Portfolio</div>
+            <h1>Data <span>Analyst</span></h1>
+            <div class="typing-container">
+                I Work On <span class="typing-text" id="typing"></span>
+            </div>
+            <p class="home-description">
+                Passionate Data Analyst who loves transforming raw data into meaningful insights. Specialized in data
+                analysis, visualization, and building interactive dashboards to support smarter, data-driven decisions.
+
+            </p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    <i class="fas fa-eye"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-paper-plane"></i> Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT SECTION (TANPA PREVIEW CV)
+    ======================================== -->
+    <section id="about">
+        <div class="section-header reveal">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-container reveal">
+            <div class="about-content">
+                <h3>
+                    <span class="greeting">Hello, I'm</span><br>
+                    <span class="name">Gaurav Thorat</span>
+                </h3>
+                <p>
+                    I am a Computer Engineering student with a strong interest in Data Analytics and a disciplined,
+                    detail-oriented approach to solving problems. I enjoy transforming raw data into meaningful insights
+                    using tools such as Python, SQL, Excel, and Power BI. I am passionate about data cleaning, analysis,
+                    visualization, and creating interactive dashboards that support effective decision-making. As a
+                    collaborative team player and continuous learner, I am committed to improving my analytical skills
+                    and delivering accurate, data-driven solutions that contribute to organizational goals.
+                </p>
+                <p>
+                    When I'm not analyzing data, you'll find me exploring new data analytics tools, working on
+                    real-world datasets, building interactive dashboards, or improving my skills in Python, SQL, Excel,
+                    and Power BI.
+
+                </p>
+                <div class="cv-download-section">
+                    <a href="Gaurav_Thorat_Resume.pdf" download="Gaurav_Thorat_Resume.pdf" class="cv-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#portfolio" class="projects-btn">
+                        <i class="fas fa-briefcase"></i> View Projects
+                    </a>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <div class="about-photo-circle">
+                    <img src="gaurav.jpeg" alt="Gaurav Thorat" class="about-photo">
+                    <div class="about-photo-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PORTFOLIO SECTION
+    ======================================== -->
+    <section id="portfolio">
+        <div class="section-header reveal">
+            <h2>Portfolio Showcase</h2>
+            <p>Explore my projects and technical skills</p>
+        </div>
+        <div class="portfolio-tabs reveal">
+            <button class="tab-btn active" onclick="switchTab('projects')">
+                <i class="fas fa-code"></i> Projects
+            </button>
+            <button class="tab-btn" onclick="switchTab('skills')">
+                <i class="fas fa-laptop-code"></i> Skills
+            </button>
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="projects" class="tab-content active">
+            <div class="projects-grid">
+                <!-- E-Commerce Project - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('ecommerce')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-shopping-cart"></i>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Data Analysis</h3>
+                        <p> Comprehensive e-commerce data analysis with interactive dashboards and actionable business
+                            insights.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Data Analysis - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('Bank Data Analysis')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-tasks"></i>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Bank Data Analysis</h3>
+                        <p>Comprehensive bank data analysis with interactive dashboards and actionable business
+                            insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Retail Walmart Analysis  - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('retail-walmart')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-tasks"></i>
+
+                    </div>
+                    <div class="project-content">
+                        <h3>Retail Walmart Analysis</h3>
+                        <p>Comprehensive retail data analysis for Walmart with interactive dashboards and actionable
+                            business insights.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter Notebook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Dashboard - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('bank-dashboard')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bank Dashboard</h3>
+                        <p>Interactive dashboard for bank data visualization.</p>
+                        <div class="project-tags">
+                            <span class="tag">Sql</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">KPI's</span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HR Data Analysis Dashboard tableau - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('hr-dashboard')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>HR Data Analysis Dashboard</h3>
+                        <p>Interactive dashboard for analyzing human resources data.</p>
+                        <div class="project-tags">
+                            <span class="tag">Sql</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">KPI's</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Data Analysis Dashboard Power BI - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('mobile-analytics')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Data Analysis Dashboard</h3>
+                        <p>Interactive dashboard for analyzing mobile sales data .</p>
+                        <div class="project-tags">
+                            <span class="tag">Sql</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">DAX</span>
+                            <span class="tag">KPI's</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales Data Analysis - ICON -->
+                <div class="project-card reveal" onclick="openProjectModal('sales-analytics')">
+                    <div class="project-image project-icon-card">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sales Data Analysis</h3>
+                        <p>Interactive dashboard for analyzing sales data.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">Jupyter Notebook</span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Skills Tab -->
+        <div id="skills" class="tab-content">
+            <div class="skills-grid-container">
+
+                <!-- Python -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="skill-name-label">Python</div>
+                </div>
+
+                <!-- SQL -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon sql">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="skill-name-label">SQL</div>
+                </div>
+
+                <!-- MySQL -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon mysql">
+                        <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">MySQL</div>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon postgresql">
+                        <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">PostgreSQL</div>
+                </div>
+
+                <!-- Power BI -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon powerbi">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/3840px-New_Power_BI_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail"
+                            alt="Power BI" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">Power BI</div>
+                </div>
+
+                <!-- Tableau -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon tableau">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/10/Tableau-Symbol.png" alt="Tableau"
+                            class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">Tableau</div>
+                </div>
+
+                <!-- Jupyter Notebook -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon jupyter">
+                        <img src="https://cdn.simpleicons.org/jupyter/F37626" alt="Jupyter Notebook" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">Jupyter Notebook</div>
+                </div>
+
+                <!-- Pandas -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon pandas">
+                        <img src="https://cdn.simpleicons.org/pandas/150458" alt="Pandas" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">Pandas</div>
+                </div>
+
+                <!-- NumPy -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon numpy">
+                        <img src="https://cdn.simpleicons.org/numpy/4DABCF" alt="NumPy" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">NumPy</div>
+                </div>
+
+                <!-- Matplotlib -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon matplotlib">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="skill-name-label">Matplotlib</div>
+                </div>
+
+                <!-- Excel -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon excel">
+                        <img src="https://www.logo.wine/a/logo/Microsoft_Excel/Microsoft_Excel-Logo.wine.svg"
+                            alt="Microsoft Excel" class="skill-logo">
+                    </div>
+                    <div class="skill-name-label">Excel</div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon data-analysis">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="skill-name-label">Data Analysis</div>
+                </div>
+
+                <!-- Data Cleaning -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon data-cleaning">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <div class="skill-name-label">Data Cleaning</div>
+                </div>
+
+                <!-- Data Visualization -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon data-visualization">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <div class="skill-name-label">Data Visualization</div>
+                </div>
+
+                <!-- HTML5 -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon html5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name-label">HTML5</div>
+                </div>
+
+                <!-- CSS3 -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon css3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name-label">CSS3</div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon javascript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="skill-name-label">JavaScript</div>
+                </div>
+
+                <!-- AWS -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon aws">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="skill-name-label">AWS</div>
+                </div>
+
+                <!-- AI Tools -->
+                <div class="skill-icon-card reveal">
+                    <div class="skill-icon ai-tools">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="skill-name-label">AI Tools</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROJECT MODAL
+    ======================================== -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         LIGHTBOX
+    ======================================== -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" onclick="changeImage(-1)">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="Project Screenshot">
+            <a href="#" id="lightboxDemoBtn" class="lightbox-demo-btn" target="_blank">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+        </div>
+        <button class="lightbox-next" onclick="changeImage(1)">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+    <!-- ========================================
+         CONTACT SECTION
+    ======================================== -->
+    <section id="contact">
+        <div class="contact-container reveal">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h3>Send Me a Message</h3>
+                    <form id="contactForm">
+
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Your Name
+                            </label>
+
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Your Email
+                            </label>
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Subject
+                            </label>
+
+                            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message
+                            </label>
+
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fab fa-whatsapp"></i>
+                            Send on WhatsApp
+                        </button>
+
+                    </form>
+
+
+                    <script>
+
+                        document.getElementById("contactForm").addEventListener("submit", function (event) {
+
+                            event.preventDefault();
+
+                            // Get form values
+                            const name = document.getElementById("name").value.trim();
+                            const email = document.getElementById("email").value.trim();
+                            const subject = document.getElementById("subject").value.trim();
+                            const message = document.getElementById("message").value.trim();
+
+                            // Your WhatsApp number
+                            const phoneNumber = "918208408552";
+
+                            // WhatsApp message
+                            const whatsappMessage =
+                                `Hello Gaurav,
+
+I received a message from your portfolio website.
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+
+Thank you.`;
+
+                            // Create WhatsApp URL
+                            const whatsappURL =
+                                "https://wa.me/" +
+                                phoneNumber +
+                                "?text=" +
+                                encodeURIComponent(whatsappMessage);
+
+                            // Open WhatsApp
+                            window.open(whatsappURL, "_blank");
+
+                        });
+
+                    </script>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div>
+                        <h3>Let's Talk</h3>
+                        <p>Have a question or want to work together? Feel free to reach out.</p>
+                    </div>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>gauravthorat810@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Akluj , Maharashtra</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Availability</h4>
+                                <p>24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/gauravthorat96s" target="_blank" class="social-link"
+                                aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gaurav-thorat-643438322" target="_blank"
+                                class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/gaurav_thorat_96s" target="_blank" class="social-link"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/918208408552?text=Hi%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+                                class="social-link" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- About Section -->
+                <div class="footer-section about">
+                    <div class="logo">Gibran.com</div>
+                    <p>Passionate Data Analyst creating modern and responsive Dashboards and Reports</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/gauravthorat96s" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gaurav-thorat-643438322" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gaurav_thorat_96s" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+
+                        <li><a href="#">Dashboard Criating</a></li>
+                        <li><a href="#">Report Generating</a></li>
+                        <li><a href="#">Python Project Development</a></li>
+                        <li><a href="#">Data analysis</a></li>
+                        <li><a href="#">Mobile Apps</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Consulting</a></li>
+                        <li><a href="#">Collage Project</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> gauravthorat810@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +918208408552</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Akluj ,Maharashtra</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Gaurav Thorat. All rights reserved.</p>
+                <ul class="footer-bottom-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
